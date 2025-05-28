@@ -1,6 +1,6 @@
 #!/bin/bash
-error_file=`cat /var/log/messages`
-matched_error=`grep -i error /var/log/messages`
+error_file=`cat /var/log/nginx/access.log
+matched_error=`grep -i error /var/log/nginx/access.log`
 echo $matched_error
 if [[ $? -eq 0 ]];
 then
